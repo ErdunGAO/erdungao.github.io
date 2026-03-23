@@ -1,28 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Erdun Gao's Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erdun Gao's Homepage</title>
 
-<link rel="shortcut icon" href="myIcon.ico">
-<link rel="stylesheet" href="jemdoc.css" type="text/css">
+  <link rel="shortcut icon" href="myIcon.ico">
+  <link rel="stylesheet" href="jemdoc.css" type="text/css">
 
-<meta name="keywords" content="Erdun Gao">
-<meta name="description" content="Erdun Gao's home page">
+  <meta name="keywords" content="Erdun Gao, Machine Learning, Causal Inference, AIML">
+  <meta name="description" content="Erdun Gao's home page">
+
+  <style>
+    #layout-content {
+      margin: 25px auto;
+      max-width: 950px; 
+      padding: 0 15px;
+    }
+
+    .profile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+    .profile-text {
+      flex: 1;
+    }
+    .profile-image {
+      flex-shrink: 0;
+    }
+    .profile-image img {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .flex-list-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 5px;
+    }
+    .flex-list-content {
+      flex: 1;
+      padding-right: 15px;
+    }
+    .flex-list-date {
+      white-space: nowrap;
+      color: #555;
+    }
+
+    .text-justify {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .profile-header {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+      }
+      .profile-image img {
+        max-width: 200px;
+      }
+      .text-justify {
+        text-align: left;
+      }
+      .flex-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 12px;
+      }
+      .flex-list-date {
+        font-size: 0.9em;
+        color: #888;
+        margin-top: 2px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<div id="layout-content" style="margin-top:25px">
+<div id="layout-content">
 
-<a href="https://github.com/ErdunGAO" class="github-corner"></a>
+  <a href="https://github.com/ErdunGAO" class="github-corner" aria-label="View source on GitHub"></a>
 
-<table>
-  <tr>
-    <td width="670">
+  <header class="profile-header">
+    <div class="profile-text">
       <div id="toptitle">
         <h1>Erdun Gao</h1>
       </div>
-
       <h3>Research Fellow</h3>
       <p>
         Kernels and Information Processing Systems (KIPS) Group<br>
@@ -32,177 +103,220 @@
         Address: AIML Building, Lot Fourteen, Adelaide<br>
         Email: erdun.gao AT outlook.com
       </p>
-    </td>
+    </div>
+    <div class="profile-image">
+      <img src="./pic/erdun_uni.jpg" alt="Erdun Gao Profile Picture">
+    </div>
+  </header>
 
-    <td>
-      <img src="./pic/erdun_uni.jpg" width="300" alt="Erdun Gao">
-    </td>
-  </tr>
-</table>
+  <section>
+    <h2>About Me</h2>
+    <p class="text-justify">
+      I am a Research Fellow at the
+      <a href="https://www.adelaide.edu.au/aiml/our-key-initiatives/responsible-ai-research-centre" target="_blank">RAIR</a>,
+      <a href="https://www.adelaide.edu.au/aiml/" target="_blank">AIML</a>,
+      where I am a member of the
+      <a href="https://sejdino.github.io/group/" target="_blank">KIPS Group</a>
+      led by <a href="https://sejdino.github.io/" target="_blank">Prof. Dino Sejdinovic</a>.
+      I received my Ph.D. in Applied Statistics (2025) from the School of Mathematics and Statistics at The University of Melbourne,
+      where I was part of the
+      <a href="https://mingming-gong.github.io/group.html" target="_blank">Machine Learning and Reasoning (MLR) Group</a>,
+      advised by <a href="https://mingming-gong.github.io/" target="_blank">Prof. Mingming Gong</a> and
+      <a href="https://findanexpert.unimelb.edu.au/profile/600991-howard-bondell" target="_blank">Prof. Howard Bondell</a>.
+      I also hold an M.S. in Signal and Information Processing (2020),
+      supervised by
+      <a href="https://scholar.google.com/citations?user=93BWS7UAAAAJ&hl=zh-CN" target="_blank">Prof. Zhibin Pan</a>,
+      and a B.E. in Information Engineering (2017),
+      both from the School of Information and Communication Engineering, Xi’an Jiaotong University.
+    </p>
+  </section>
 
-<h2>About Me</h2>
-<p style="text-align:justify">
-I am a Research Fellow at the
-<a href="https://www.adelaide.edu.au/aiml/our-key-initiatives/responsible-ai-research-centre">RAIR</a>,
-<a href="https://www.adelaide.edu.au/aiml/">AIML</a>,
-where I am a member of the
-<a href="https://sejdino.github.io/group/">KIPS Group</a>
-led by <a href="https://sejdino.github.io/">Prof. Dino Sejdinovic</a>.
-I received my Ph.D. in Applied Statistics (2025) from the School of Mathematics and Statistics at The University of Melbourne,
-where I was part of the
-<a href="https://mingming-gong.github.io/group.html">Machine Learning and Reasoning (MLR) Group</a>,
-advised by <a href="https://mingming-gong.github.io/">Prof. Mingming Gong</a> and
-<a href="https://findanexpert.unimelb.edu.au/profile/600991-howard-bondell">
-Prof. Howard Bondell</a>.
-I also hold an M.S. in Signal and Information Processing (2020),
-supervised by
-<a href="https://scholar.google.com/citations?user=93BWS7UAAAAJ&hl=zh-CN">Prof. Zhibin Pan</a>,
-and a B.E. in Information Engineering (2017),
-both from the School of Information and Communication Engineering, Xi’an Jiaotong University.
-</p>
+  <section>
+    <h2>Research Interests</h2>
+    <p class="text-justify">
+      My long-term research goal is to build trustworthy decision-making systems,
+      with a focus on causal inference and uncertainty quantification.
+      I believe that uncovering cause-and-effect relationships and properly
+      accounting for uncertainty are key to making AI systems both robust and
+      interpretable in high-stakes scenarios.
+      I also occasionally work on broader machine learning problems related to
+      data and models.
+    </p>
+    <ul style="margin-top:10px">
+      <li><b>Core Causality:</b> Causal Discovery, Causal Effect Estimation, Causal Experimental Design.</li>
+      <li><b>Causality & Machine Learning:</b> Causal Generative Models, Causal LLMs, Causal Foundation Models.</li>
+      <li><b>Machine Learning:</b> Data Valuation, Context-Informed Learning, Uncertainty in LLMs.</li>
+    </ul>
+  </section>
 
-<h2>Research Interests</h2>
-<p style="text-align:justify">
-My long-term research goal is to build trustworthy decision-making systems,
-with a focus on causal inference and uncertainty quantification.
-I believe that uncovering cause-and-effect relationships and properly
-accounting for uncertainty are key to making AI systems both robust and
-interpretable in high-stakes scenarios.
-I also occasionally work on broader machine learning problems related to
-data and models.
-</p>
+  <section>
+    <h2>Main Papers</h2>
+    <p style="margin-top:-5px">
+      <a href="Publications.html">[Full List]</a>
+      <a href="https://scholar.google.com/citations?user=SilAzvwAAAAJ&hl=en" target="_blank" style="margin-left:10px">[Google Scholar]</a>
+    </p>
+    <ul>
+      <li>
+        Observationally Informed Adaptive Causal Experimental Design, Preprint.<br>
+        <b>Erdun Gao</b>, Liang Zhang, Jake Fawkes, Aoqi Zuo, Wenqin Liu, Haoxuan Li, Mingming Gong, Dino Sejdinovic
+      </li>
+      <li>
+        Causal-EPIG: A Prediction-Oriented Active Learning Framework for CATE Estimation, Preprint.<br>
+        <b>Erdun Gao</b>, Jake Fawkes, Dino Sejdinovic
+      </li>
+      <li>
+        Concept Component Analysis: A Principled Approach for Concept Extraction in LLMs, Preprint.<br>
+        Yuhang Liu, <b>Erdun Gao</b>, Dong Gong, Anton van den Hengel, Javen Qinfeng Shi
+      </li>
+      <li>
+        ActiveCQ: Active Estimation of Causal Quantities, ICLR, 2026.<br>
+        <b>Erdun Gao</b>, Dino Sejdinovic
+      </li>
+      <li>
+        Domain Generalization via Content Factors Isolation: A Two-level Latent Variable Modeling Approach, MLJ, 2025.<br>
+        <b>Erdun Gao</b>, Howard Bondell, Shaoli Huang, Mingming Gong
+      </li>
+      <li>
+        MissScore: High-Order Score Estimation in the Presence of Missing Data, ICML, 2025.<br>
+        Wenqin Liu, Haoze Hou, <b>Erdun Gao</b>, Biwei Huang, Qiuhong Ke, Howard Bondell, Mingming Gong
+      </li>
+      <li>
+        A Variational Framework for Estimating Continuous Treatment Effects with Measurement Error, ICLR, 2024.<br>
+        <b>Erdun Gao</b>, Howard Bondell, Wei Huang, Mingming Gong
+      </li>
+      <li>
+        Causal Discovery with Mixed Linear and Nonlinear Additive Noise Models: A Scalable Approach, CLeaR, 2024.<br>
+        Wenqin Liu, Biwei Huang, <b>Erdun Gao</b>, Qiuhong Ke, Howard Bondell, Mingming Gong
+      </li>
+      <li>
+        FedDAG: Federated DAG Structure Learning, TMLR, 2023.<br>
+        <b>Erdun Gao</b>, Junjia Chen, Li Shen, Tongliang Liu, Mingming Gong, Howard Bondell
+      </li>
+      <li>
+        MissDAG: Causal Discovery in the Presence of Missing Data with Continuous Additive Noise Models, NeurIPS, 2022.<br>
+        <b>Erdun Gao</b>, Ignavier Ng, Mingming Gong, Li Shen, Wei Huang, Tongliang Liu, Kun Zhang, Howard Bondell
+      </li>
+    </ul>
+  </section>
 
-<ul style="margin-top:10px">
-  <li><b>Core Causality:</b> Causal Discovery, Causal Effect Estimation, Causal Experimental Design.</li>
-  <li><b>Causality & Machine Learning:</b> Causal Generative Models, Causal LLMs, Causal Foundation Models.</li>
-  <li><b>Machine Learning:</b> Data Valuation, Context-Informed Learning, Uncertainty in LLMs.</li>
-</ul>
+  <section>
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <div class="flex-list-item">
+          <div class="flex-list-content">
+            <b>Research Fellow</b><br>Responsible AI Research Centre, AIML & CSIRO
+          </div>
+          <div class="flex-list-date">Jan 2026 – Present</div>
+        </div>
+      </li>
+      <li>
+        <div class="flex-list-item">
+          <div class="flex-list-content">
+            <b>Researcher</b><br>Centre for Augmented Reasoning, AIML
+          </div>
+          <div class="flex-list-date">July 2024 – Dec 2025</div>
+        </div>
+      </li>
+      <li>
+        <div class="flex-list-item">
+          <div class="flex-list-content">
+            <b>Postgraduate Studentship</b><br>CSIRO
+          </div>
+          <div class="flex-list-date">Aug 2023 – Apr 2024</div>
+        </div>
+      </li>
+      <li>
+        <div class="flex-list-item">
+          <div class="flex-list-content">
+            <b>Research Intern</b><br>JD Explore Academy
+          </div>
+          <div class="flex-list-date">Mar 2021 – Mar 2022</div>
+        </div>
+      </li>
+      <li>
+        <div class="flex-list-item">
+          <div class="flex-list-content">
+            <b>Research Intern</b><br>Huawei Noah's Ark Lab
+          </div>
+          <div class="flex-list-date">Oct 2020 – Mar 2021</div>
+        </div>
+      </li>
+    </ul>
+  </section>
 
-<h2>Main Papers</h2>
-<p style="margin-top:-5px">
-  <a href="Publications.html">[Full List]</a>
-  <a href="https://scholar.google.com/citations?user=SilAzvwAAAAJ&hl=en" style="margin-left:10px">
-    [Google Scholar]
-  </a>
-</p>
+  <section>
+    <h2>Honors &amp; Awards</h2>
+    <ul>
+      <li>
+        <div class="flex-list-item">
+          <span class="flex-list-content">Science Abroad Travelling Scholarships (Unimelb)</span>
+          <span class="flex-list-date">2022, 2024</span>
+        </div>
+      </li>
+      <li>
+        <div class="flex-list-item">
+          <span class="flex-list-content">NeurIPS Scholar Award</span>
+          <span class="flex-list-date">2022</span>
+        </div>
+      </li>
+      <li>
+        <div class="flex-list-item">
+          <span class="flex-list-content">Australian Government RTP Scholarship</span>
+          <span class="flex-list-date">2021–2024</span>
+        </div>
+      </li>
+      <li>
+        <div class="flex-list-item">
+          <span class="flex-list-content">Outstanding Master Thesis Award (XJTU)</span>
+          <span class="flex-list-date">2020</span>
+        </div>
+      </li>
+      <li>
+        <div class="flex-list-item">
+          <span class="flex-list-content">Outstanding Graduate (XJTU)</span>
+          <span class="flex-list-date">2017, 2020</span>
+        </div>
+      </li>
+      <li>
+        <div class="flex-list-item">
+          <span class="flex-list-content">China National Scholarship</span>
+          <span class="flex-list-date">2019</span>
+        </div>
+      </li>
+      <li>
+        <div class="flex-list-item">
+          <span class="flex-list-content">First-class Academic Scholarship (XJTU)</span>
+          <span class="flex-list-date">2018, 2019</span>
+        </div>
+      </li>
+      <li>
+        <div class="flex-list-item">
+          <span class="flex-list-content">Outstanding Student (XJTU)</span>
+          <span class="flex-list-date">2014–2019</span>
+        </div>
+      </li>
+      <li>
+        <div class="flex-list-item">
+          <span class="flex-list-content">Tangzhongying Scholarship (XJTU)</span>
+          <span class="flex-list-date">2013–2017</span>
+        </div>
+      </li>
+    </ul>
+  </section>
 
-<ul>
+  <section>
+    <h2>Academic Service</h2>
+    <ul>
+      <li><b>Journal Reviewer:</b> TMLR, TNNLS, TCSVT, MLJ, NN, JSCS</li>
+      <li><b>Conference Reviewer:</b> ICML (2022–2026), ICLR (2023–2026), NeurIPS (2023, 2025), UAI (2022–2025)</li>
+      <li><b>Organising Committee:</b> Next Generation Responsible AI Symposium (2025)</li>
+    </ul>
+  </section>
 
-  <li>
-    Observationally Informed Adaptive Causal Experimental Design, Preprint.<br>
-    <b>Erdun Gao</b>, Liang Zhang, Jake Fawkes, Aoqi Zuo, Wenqin Liu, Haoxuan Li, Mingming Gong, Dino Sejdinovic
-  </li>
-
-  <li>
-    Causal-EPIG: A Prediction-Oriented Active Learning Framework for CATE Estimation, Preprint.<br>
-    <b>Erdun Gao</b>, Jake Fawkes, Dino Sejdinovic
-  </li>
-  
-  <li>
-    Concept Component Analysis: A Principled Approach for Concept Extraction in LLMs, Preprint.<br>
-    Yuhang Liu, <b>Erdun Gao</b>, Dong Gong, Anton van den Hengel, Javen Qinfeng Shi
-  </li>
-  
-  <li>
-    ActiveCQ: Active Estimation of Causal Quantities, ICLR, 2026.<br>
-    <b>Erdun Gao</b>, Dino Sejdinovic
-  </li>
-
-  <li>
-    Domain Generalization via Content Factors Isolation: A Two-level Latent Variable Modeling Approach, MLJ, 2025.<br>
-    <b>Erdun Gao</b>, Howard Bondell, Shaoli Huang, Mingming Gong
-  </li>
-
-  <li>
-    MissScore: High-Order Score Estimation in the Presence of Missing Data, ICML, 2025.<br>
-    Wenqin Liu, Haoze Hou, <b>Erdun Gao</b>, Biwei Huang, Qiuhong Ke, Howard Bondell, Mingming Gong
-  </li>
-
-  <li>
-    A Variational Framework for Estimating Continuous Treatment Effects with Measurement Error, ICLR, 2024.<br>
-    <b>Erdun Gao</b>, Howard Bondell, Wei Huang, Mingming Gong
-  </li>
-
-  <li>
-    Causal Discovery with Mixed Linear and Nonlinear Additive Noise Models: A Scalable Approach, CLeaR, 2024.<br>
-    Wenqin Liu, Biwei Huang, <b>Erdun Gao</b>, Qiuhong Ke, Howard Bondell, Mingming Gong
-  </li>
-
-  <li>
-    FedDAG: Federated DAG Structure Learning, TMLR, 2023.<br>
-    <b>Erdun Gao</b>, Junjia Chen, Li Shen, Tongliang Liu, Mingming Gong, Howard Bondell
-  </li>
-
-  <li>
-    MissDAG: Causal Discovery in the Presence of Missing Data with Continuous Additive Noise Models, NeurIPS, 2022.<br>
-    <b>Erdun Gao</b>, Ignavier Ng, Mingming Gong, Li Shen, Wei Huang, Tongliang Liu, Kun Zhang, Howard Bondell
-  </li>
-</ul>
-
-<h2>Experience</h2>
-<ul>
-  <li>
-    Research Fellow
-    <div style="float:right">Jan 2026 – Present</div>
-    <br>Responsible AI Research Centre, AIML&CSIRO
-  </li>
-  
-  <li>
-    Researcher
-    <div style="float:right">July 2024 – Dec 2025</div>
-    <br>Centre for Augmented Reasoning, AIML
-  </li>
-
-  <li>
-    Postgraduate Studentship
-    <div style="float:right">Aug 2023 – Apr 2024</div>
-    <br>CSIRO
-  </li>
-
-  <li>
-    Research Intern
-    <div style="float:right">Mar 2021 – Mar 2022</div>
-    <br>JD Explore Academy
-  </li>
-
-  <li>
-    Research Intern
-    <div style="float:right">Oct 2020 – Mar 2021</div>
-    <br>Huawei Noah's Ark Lab
-  </li>
-</ul>
-
-<h2>Honors &amp; Awards</h2>
-<ul>
-  <li>Science Abroad Travelling Scholarships (Unimelb) <div style="float:right">2022, 2024</div></li>
-  <li>NeurIPS Scholar Award <div style="float:right">2022</div></li>
-  <li>Australian Government RTP Scholarship <div style="float:right">2021–2024</div></li>
-  <li>Outstanding Master Thesis Award (XJTU) <div style="float:right">2020</div></li>
-  <li>Outstanding Graduate (XJTU) <div style="float:right">2017, 2020</div></li>
-  <li>China National Scholarship <div style="float:right">2019</div></li>
-  <li>First-class Academic Scholarship (XJTU) <div style="float:right">2018, 2019</div></li>
-  <li>Outstanding Student (XJTU) <div style="float:right">2014–2019</div></li>
-  <li>Tangzhongying Scholarship (XJTU) <div style="float:right">2013–2017</div></li>
-</ul>
-
-<h2>Academic Service</h2>
-<ul>
-  <li>
-    <b>Journal Reviewer:</b> TMLR, TNNLS, TCSVT, MLJ, NN, JSCS
-  </li>
-  <li>
-    <b>Conference Reviewer:</b>
-    ICML (2022–2026), ICLR (2023–2026), NeurIPS (2023, 2025), UAI (2022–2025)
-  </li>
-  <li>
-    <b>Organising Committee:</b>
-    Next Generation Responsible AI Symposium (2025)
-  </li>
-</ul>
-
-<p style="text-align:center;margin-top:40px">
-  &copy; Erdun Gao | Last updated: Jan-2026
-</p>
+  <footer style="text-align:center; margin-top:50px; padding-bottom:30px; color:#666; font-size:0.9em;">
+    &copy; Erdun Gao | Last updated: Jan-2026
+  </footer>
 
 </div>
 </body>
