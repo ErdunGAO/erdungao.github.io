@@ -34,13 +34,19 @@
 }
 
 .page-nav {
-  margin: 8px 0 28px;
-  font-size: 1.02em;
-  line-height: 1.8;
+  margin-top: 0.7em;
+  margin-bottom: 0.8em;
+  padding-top: 0.8em;
+  padding-bottom: 0.2em;
+  line-height: 1.2;
+  font-size: 125%;
+  color: #527bbd;
+  border-bottom: 1px solid #aaaaaa;
 }
 
 .page-nav a {
   margin-right: 12px;
+  color: #527bbd;
 }
 
 .page-nav a.active {
@@ -186,5 +192,9 @@ footer.site-footer {
 
   .page-links-grid {
     grid-template-columns: 1fr;
+  }
+
+  .page-nav {
+    line-height: 1.6;
   }
 }
