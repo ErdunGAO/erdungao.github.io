@@ -172,10 +172,14 @@
 }
 
 #layout-content h2 {
-  padding-top: 0.5em;
-  font-size: 110%;
-  border-bottom: 1px solid #d9dee8;
-  padding-bottom: 0;
+  padding-top: 0.8em;
+  padding-bottom: 0.2em;
+  font-size: 125%;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+section h3 {
+  font-weight: 400;
 }
 
 footer.site-footer {
