@@ -40,12 +40,12 @@
 }
 
 .profile-links a {
-  margin-right: 12px;
+  margin-right: 6px;
   color: #527bbd;
 }
 
 .profile-links .separator {
-  margin-right: 12px;
+  margin-right: 6px;
   color: #888888;
 }
 
@@ -174,7 +174,7 @@
 #layout-content h2 {
   padding-top: 0.5em;
   font-size: 110%;
-  border-bottom: none;
+  border-bottom: 1px solid #d9dee8;
   padding-bottom: 0;
 }
 
