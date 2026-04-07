@@ -7,52 +7,10 @@
 
   <link rel="shortcut icon" href="myIcon.ico">
   <link rel="stylesheet" href="jemdoc.css" type="text/css">
+  <link rel="stylesheet" href="site.css" type="text/css">
 
   <meta name="keywords" content="Erdun Gao, Publications, Machine Learning, Causal Inference">
   <meta name="description" content="Erdun Gao's publications">
-
-  <style>
-    #layout-content {
-      margin: 25px auto;
-      max-width: 950px; 
-      padding: 0 15px;
-    }
-
-    .nav-links {
-      margin-bottom: 30px;
-      font-size: 1.05em;
-    }
-    
-    .nav-links a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #0056b3;
-    }
-
-    .nav-links a:hover {
-      text-decoration: underline;
-    }
-
-    .publication-list {
-      padding-left: 20px;
-    }
-
-    .publication-list li {
-      margin-bottom: 18px;
-      line-height: 1.6;
-      text-align: justify;
-    }
-
-    .venue {
-      color: #444;
-    }
-
-    @media (max-width: 768px) {
-      .publication-list li {
-        text-align: left;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -60,10 +18,24 @@
 
   <header>
     <h2>Publications</h2>
-    <div class="nav-links">
-      <a href="index.html">[Back to Home]</a>
-      <a href="https://scholar.google.com/citations?user=SilAzvwAAAAJ&hl=en" target="_blank">[Google Scholar]</a>
-    </div>
+    <nav class="page-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <span class="separator">|</span>
+      <a href="Publications.html" class="active">Publications</a>
+      <span class="separator">|</span>
+      <a href="Experience.html">Experience</a>
+      <span class="separator">|</span>
+      <a href="Awards.html">Awards</a>
+      <span class="separator">|</span>
+      <a href="Service.html">Service</a>
+    </nav>
+    <p class="page-intro">
+      Full publication list. For citation metrics and the most recent updates,
+      please also see my Google Scholar profile.
+    </p>
+    <p class="inline-links">
+      <a href="https://scholar.google.com/citations?user=SilAzvwAAAAJ&amp;hl=en" target="_blank">[Google Scholar]</a>
+    </p>
   </header>
 
   <section>
@@ -202,8 +174,8 @@
     </ul>
   </section>
 
-  <footer style="text-align:center; margin-top:50px; padding-bottom:30px; color:#666; font-size:0.9em;">
-    &copy; Erdun Gao | Last updated: Jan-2026
+  <footer class="site-footer">
+    &copy; Erdun Gao | Last updated: Apr-2026
   </footer>
 
 </div>

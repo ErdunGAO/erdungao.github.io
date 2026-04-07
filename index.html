@@ -7,87 +7,14 @@
 
   <link rel="shortcut icon" href="myIcon.ico">
   <link rel="stylesheet" href="jemdoc.css" type="text/css">
+  <link rel="stylesheet" href="site.css" type="text/css">
 
   <meta name="keywords" content="Erdun Gao, Machine Learning, Causal Inference, AIML">
   <meta name="description" content="Erdun Gao's home page">
-
-  <style>
-    #layout-content {
-      margin: 25px auto;
-      max-width: 950px; 
-      padding: 0 15px;
-    }
-
-    .profile-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 40px;
-      margin-bottom: 30px;
-    }
-    .profile-text {
-      flex: 1;
-    }
-    .profile-image {
-      flex-shrink: 0;
-    }
-    .profile-image img {
-      width: 100%;
-      max-width: 260px;
-      border-radius: 6px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-
-    .flex-list-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 5px;
-    }
-    .flex-list-content {
-      flex: 1;
-      padding-right: 15px;
-    }
-    .flex-list-date {
-      white-space: nowrap;
-      color: #555;
-    }
-
-    .text-justify {
-      text-align: justify;
-      line-height: 1.6;
-    }
-
-    @media (max-width: 768px) {
-      .profile-header {
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 20px;
-      }
-      .profile-image img {
-        max-width: 200px;
-      }
-      .text-justify {
-        text-align: left;
-      }
-      .flex-list-item {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 12px;
-      }
-      .flex-list-date {
-        font-size: 0.9em;
-        color: #888;
-        margin-top: 2px;
-      }
-    }
-  </style>
 </head>
 
 <body>
 <div id="layout-content">
-
-  <a href="https://github.com/ErdunGAO" class="github-corner" aria-label="View source on GitHub"></a>
 
   <header class="profile-header">
     <div class="profile-text">
@@ -109,6 +36,18 @@
     </div>
   </header>
 
+  <nav class="page-nav" aria-label="Primary">
+    <a href="index.html" class="active">Home</a>
+    <span class="separator">|</span>
+    <a href="Publications.html">Publications</a>
+    <span class="separator">|</span>
+    <a href="Experience.html">Experience</a>
+    <span class="separator">|</span>
+    <a href="Awards.html">Awards</a>
+    <span class="separator">|</span>
+    <a href="Service.html">Service</a>
+  </nav>
+
   <section>
     <h2>About Me</h2>
     <p class="text-justify">
@@ -125,7 +64,7 @@
       <a href="https://findanexpert.unimelb.edu.au/profile/600991-howard-bondell" target="_blank">Prof. Howard Bondell</a>.
       I also hold an M.S. in Signal and Information Processing (2020),
       supervised by
-      <a href="https://scholar.google.com/citations?user=93BWS7UAAAAJ&hl=zh-CN" target="_blank">Prof. Zhibin Pan</a>,
+      <a href="https://scholar.google.com/citations?user=93BWS7UAAAAJ&amp;hl=zh-CN" target="_blank">Prof. Zhibin Pan</a>,
       and a B.E. in Information Engineering (2017),
       both from the School of Information and Communication Engineering, Xi’an Jiaotong University.
     </p>
@@ -154,17 +93,44 @@
       </li>
 
       <li>
-      <b>Uncertainty & Decision-Making:</b> Uncertainty Quantification, Information-Theoretic Acquisition, Data-Efficient Learning.
+      <b>Uncertainty &amp; Decision-Making:</b> Uncertainty Quantification, Information-Theoretic Acquisition, Data-Efficient Learning.
     </li>
 
     </ul>
   </section>
 
   <section>
+    <h2>Explore More</h2>
+    <p class="page-intro">
+      I keep the homepage focused on a short profile and research overview.
+      Detailed information about publications, experience, awards, and service
+      is organised into separate pages below.
+    </p>
+    <div class="page-links-grid">
+      <a class="page-card" href="Publications.html">
+        <h3>Publications</h3>
+        <p>Selected and full publication list, with a direct link to Google Scholar.</p>
+      </a>
+      <a class="page-card" href="Experience.html">
+        <h3>Experience</h3>
+        <p>Research appointments, internships, and academic training in one place.</p>
+      </a>
+      <a class="page-card" href="Awards.html">
+        <h3>Awards</h3>
+        <p>Scholarships, honours, and representative recognitions across study and research.</p>
+      </a>
+      <a class="page-card" href="Service.html">
+        <h3>Service</h3>
+        <p>Journal and conference reviewing, plus organising roles and other academic service.</p>
+      </a>
+    </div>
+  </section>
+
+  <section>
     <h2>Main Papers</h2>
-    <p style="margin-top:-5px">
+    <p class="inline-links">
       <a href="Publications.html">[Full List]</a>
-      <a href="https://scholar.google.com/citations?user=SilAzvwAAAAJ&hl=en" target="_blank" style="margin-left:10px">[Google Scholar]</a>
+      <a href="https://scholar.google.com/citations?user=SilAzvwAAAAJ&amp;hl=en" target="_blank">[Google Scholar]</a>
     </p>
     <ul>
       <li>
@@ -210,123 +176,8 @@
     </ul>
   </section>
 
-  <section>
-    <h2>Experience</h2>
-    <ul>
-      <li>
-        <div class="flex-list-item">
-          <div class="flex-list-content">
-            <b>Research Fellow</b><br>Responsible AI Research Centre, AIML & CSIRO
-          </div>
-          <div class="flex-list-date">Jan 2026 – Present</div>
-        </div>
-      </li>
-      <li>
-        <div class="flex-list-item">
-          <div class="flex-list-content">
-            <b>Researcher</b><br>Centre for Augmented Reasoning, AIML
-          </div>
-          <div class="flex-list-date">July 2024 – Dec 2025</div>
-        </div>
-      </li>
-      <li>
-        <div class="flex-list-item">
-          <div class="flex-list-content">
-            <b>Postgraduate Studentship</b><br>CSIRO
-          </div>
-          <div class="flex-list-date">Aug 2023 – Apr 2024</div>
-        </div>
-      </li>
-      <li>
-        <div class="flex-list-item">
-          <div class="flex-list-content">
-            <b>Research Intern</b><br>JD Explore Academy
-          </div>
-          <div class="flex-list-date">Mar 2021 – Mar 2022</div>
-        </div>
-      </li>
-      <li>
-        <div class="flex-list-item">
-          <div class="flex-list-content">
-            <b>Research Intern</b><br>Huawei Noah's Ark Lab
-          </div>
-          <div class="flex-list-date">Oct 2020 – Mar 2021</div>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Honors &amp; Awards</h2>
-    <ul>
-      <li>
-        <div class="flex-list-item">
-          <span class="flex-list-content">Science Abroad Travelling Scholarships (Unimelb)</span>
-          <span class="flex-list-date">2022, 2024</span>
-        </div>
-      </li>
-      <li>
-        <div class="flex-list-item">
-          <span class="flex-list-content">NeurIPS Scholar Award</span>
-          <span class="flex-list-date">2022</span>
-        </div>
-      </li>
-      <li>
-        <div class="flex-list-item">
-          <span class="flex-list-content">Australian Government RTP Scholarship</span>
-          <span class="flex-list-date">2021–2024</span>
-        </div>
-      </li>
-      <li>
-        <div class="flex-list-item">
-          <span class="flex-list-content">Outstanding Master Thesis Award (XJTU)</span>
-          <span class="flex-list-date">2020</span>
-        </div>
-      </li>
-      <li>
-        <div class="flex-list-item">
-          <span class="flex-list-content">Outstanding Graduate (XJTU)</span>
-          <span class="flex-list-date">2017, 2020</span>
-        </div>
-      </li>
-      <li>
-        <div class="flex-list-item">
-          <span class="flex-list-content">China National Scholarship</span>
-          <span class="flex-list-date">2019</span>
-        </div>
-      </li>
-      <li>
-        <div class="flex-list-item">
-          <span class="flex-list-content">First-class Academic Scholarship (XJTU)</span>
-          <span class="flex-list-date">2018, 2019</span>
-        </div>
-      </li>
-      <li>
-        <div class="flex-list-item">
-          <span class="flex-list-content">Outstanding Student (XJTU)</span>
-          <span class="flex-list-date">2014–2019</span>
-        </div>
-      </li>
-      <li>
-        <div class="flex-list-item">
-          <span class="flex-list-content">Tangzhongying Scholarship (XJTU)</span>
-          <span class="flex-list-date">2013–2017</span>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Academic Service</h2>
-    <ul>
-      <li><b>Journal Reviewer:</b> TMLR, TNNLS, TCSVT, MLJ, NN, JSCS</li>
-      <li><b>Conference Reviewer:</b> ICML (2022–2026), ICLR (2023–2026), NeurIPS (2023, 2025), UAI (2022–2025)</li>
-      <li><b>Organising Committee:</b> Next Generation Responsible AI Symposium (2025)</li>
-    </ul>
-  </section>
-
-  <footer style="text-align:center; margin-top:50px; padding-bottom:30px; color:#666; font-size:0.9em;">
-    &copy; Erdun Gao | Last updated: Jan-2026
+  <footer class="site-footer">
+    &copy; Erdun Gao | Last updated: Apr-2026
   </footer>
 
 </div>
